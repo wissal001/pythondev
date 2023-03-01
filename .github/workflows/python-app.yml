@@ -33,6 +33,4 @@ jobs:
         pip install pytest
         Set PYTHONPATH=test\test.py
         pytest
-      env:
-      VALIDATE _ALL_CODEBASE: true  
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
