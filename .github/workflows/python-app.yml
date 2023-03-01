@@ -25,7 +25,7 @@ jobs:
     - name: checkout Code
       uses: actions/setup-python@v3
       with:
-        python-version: 3.9.13
+        python-version: 3.9
 
     - name: Install dependencies
       run: |
