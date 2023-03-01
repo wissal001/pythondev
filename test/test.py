@@ -2,7 +2,7 @@ import app
 #test fonction 1:
 
 def test_addition():
-        # Vérifie que 1 + 2 = 3
+    # Vérifie que 1 + 2 = 3
         assert app.addition(1, 2) == 3
         
     # Vérifie que -1 + 1 = 0
