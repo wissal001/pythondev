@@ -1,6 +1,6 @@
 # fonction 1
-def inc(x):
-    return x + 1
+def addition(a,b):
+    return a + b
 
 #fonction 2
 import datetime
