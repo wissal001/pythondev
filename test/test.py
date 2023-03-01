@@ -1,14 +1,8 @@
 import app
-import unittest
-#test fonction 1
-# La fonction que nous allons tester
-def addition(a, b):
-    return a + b
+import addition
+#test fonction 1:
 
-# La classe de test
-class TestAddition(unittest.TestCase):
-
-    def test_addition(self):
+def test_addition(self):
         # Vérifie que 1 + 2 = 3
         self.assertEqual(addition(1, 2), 3)
         
@@ -18,8 +12,6 @@ class TestAddition(unittest.TestCase):
         # Vérifie que 0 + 0 = 0
         self.assertEqual(addition(0, 0), 0)
 
-# Exécute les tests
-unittest.main()
 
 #test fonction 2
 def test_get_age():
