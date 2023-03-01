@@ -1,3 +1,4 @@
+from cgi import test
 from requests import get
 
 
@@ -19,5 +20,5 @@ def main():
         print(get_error_message(status))
 
 
-if __name__ == '__main__':
-    main() 
+if __name__ == '__tst__':
+    test() 
