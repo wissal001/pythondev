@@ -33,6 +33,6 @@ jobs:
       run: |
         pip install pytest
         Set PYTHONPATH=test\test.py
-        pytest-7.2.2
+        pytest
 
         
