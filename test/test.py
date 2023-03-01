@@ -1,16 +1,15 @@
 import app
 #test fonction 1:
 
-def test_addition(self):
+def test_addition():
         # Vérifie que 1 + 2 = 3
-        self.assertEqual(app.addition(1, 2), 3)
+        assert (app.addition(1, 2), 3)
         
         # Vérifie que -1 + 1 = 0
-        self.assertEqual(app.addition(-1, 1), 0)
+        assert (app.addition(-1, 1), 0)
         
         # Vérifie que 0 + 0 = 0
-        self.assertEqual(app.addition(0, 0), 0)
-
+        assert (app.addition(0, 0), 0)
 
 #test fonction 2
 def test_get_age():
