@@ -26,8 +26,8 @@ jobs:
       with:
         python-version: "3.10"
     - name: Install dependencies
-            pip Install pytest
       run: |
+        pip  install pytest
         python -m pip install --upgrade pip
         pip3 freeze > requirements.txt
     - name: Lint with flake8
