@@ -12,7 +12,7 @@ permissions:
 jobs:
   build:
     name: Python application
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: checkout Code
