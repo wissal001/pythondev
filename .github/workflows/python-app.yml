@@ -11,12 +11,11 @@ permissions:
 
 jobs:
   build:
-
-    runs-on: windows-latest
+    name: Python application
+    runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.9.13
+    - name: checkout Code
       uses: actions/setup-python@v3
       with:
         python-version: 3.9.13
@@ -33,3 +32,6 @@ jobs:
       run: |
         pip install pytest
         pytest
+      env:
+      VALIDATE _ALL_CODEBASE: true  
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
