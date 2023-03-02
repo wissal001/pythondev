@@ -35,7 +35,7 @@ def test_pysoustraction():
     # Vérifie que 5 -1 = 6
 
 
-        assert (app.soustraction(5, 1) == 4)
+        assert (app.soustraction(6, 1) == 5)
 
     
     #teset fonction 3
