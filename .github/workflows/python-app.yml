@@ -34,6 +34,6 @@ jobs:
         uses: nebularg/actions-discord-webhook@v1.0.0
         with:
           # The Discord webhook url
-          webhook_url: "https://discord.com/api/webhooks/1083479100427092029/Xk2nRMnd1XToOXgBMqwIehuARsHJCYd-mPIvygRs8AwidRol4PtyTpKpC7sW-WVyOVhz"
+          webhook_url: https://discord.com/api/webhooks/1083489099538759741/dG6jBwR18uIQcAkMXR-lZO3VCv7giogWJ0tWO6Hb1IOfQhKvCqPSMKOCeFAtbm37pWZp
           # The build status
           status: # optional, default is ${{ job.status }}
