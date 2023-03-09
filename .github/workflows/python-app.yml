@@ -29,20 +29,11 @@ jobs:
         run: |
           pip install pytest
           python -m pytest
-      - name: Slack Webhook
+      - name: discord-webhook
         # You may pin to the exact commit or the version.
-        # uses: zrosenbauer/slacktion@f3920a4f79a459226ecf1f91e627a21d63eb67b0
-        uses: zrosenbauer/slacktion@1.1.5
+        # uses: johnnyhuy/actions-discord-git-webhook@ba54912b26910da886c9095317d6da6182a87224
+        uses: johnnyhuy/actions-discord-git-webhook@v1.0.0
         with:
-          # Use to specify the username for the published message.
-          username: # optional
-          # Use to define the message that will be sent to slack.
-          text: 
-          # Use to define the webhook URL used to send a message.
-          webhook_url: https://hooks.slack.com/services/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
-          # Use to specify an emoji (using colon shortcodes, eg. :white_check_mark:) to use as the profile photo alongside the message.
-          icon_emoji: # optional
-          # Use to specify a URL to an image to use as the profile photo alongside the message.
-          icon_url: # optional
-            
+          # Discord webhook URL
+          webhook_url: "https://discord.com/api/webhooks/1083479100427092029/Xk2nRMnd1XToOXgBMqwIehuARsHJCYd-mPIvygRs8AwidRol4PtyTpKpC7sW-WVyOVhz"
       
