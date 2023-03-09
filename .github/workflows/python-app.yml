@@ -29,11 +29,12 @@ jobs:
         run: |
           pip install pytest
           python -m pytest
-      - name: GitHub Actions Discord Webhook
+      - name: Discord Webhook Messages
         # You may pin to the exact commit or the version.
-        uses: nebularg/actions-discord-webhook@v1.0.0
+        # uses: bythope/discord-webhook-messages@3b3af1ab7923c77fa96ca1d50624a91cfc9d983c
+        uses: bythope/discord-webhook-messages@v1.1.0
         with:
-          # The Discord webhook url
-          webhook_url: https://discord.com/api/webhooks/1083489099538759741/dG6jBwR18uIQcAkMXR-lZO3VCv7giogWJ0tWO6Hb1IOfQhKvCqPSMKOCeFAtbm37pWZp
-          # The build status
-          status: # optional, default is ${{ job.status }}
+          # A full discord webhook url
+          webhookUrl: "https://discord.com/api/webhooks/1083489099538759741/dG6jBwR18uIQcAkMXR-lZO3VCv7giogWJ0tWO6Hb1IOfQhKvCqPSMKOCeFAtbm37pWZp"
+          # Event handler
+          handler: 
