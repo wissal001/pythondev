@@ -32,8 +32,8 @@ jobs:
      - name: Discord.js-Webhook
       # You may pin to the exact commit or the version.
       # uses: EhsanFox/djs-actions@16ddc097afad2b3b8c8913c4b56fbee4678a9d29
-      uses: EhsanFox/djs-actions@0.1.0
-      with:
+       uses: EhsanFox/djs-actions@0.1.0
+       with:
         # Discord Webhook ID, for Users Safety, it should be stored in secrets of the Repo and inserted as a context expression.
         id: 
         # Discord Webhook Token, for Users Safety, it should be stored in secrets of the Repo and inserted as a context expression.
