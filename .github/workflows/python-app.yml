@@ -30,41 +30,41 @@ jobs:
           pip install pytest
           python -m pytest
      - name: Discord.js-Webhook
-        # You may pin to the exact commit or the version.
-        # uses: EhsanFox/djs-actions@16ddc097afad2b3b8c8913c4b56fbee4678a9d29
-        uses: EhsanFox/djs-actions@0.1.0
-        with:
-          # Discord Webhook ID, for Users Safety, it should be stored in secrets of the Repo and inserted as a context expression.
-          id: 
-          # Discord Webhook Token, for Users Safety, it should be stored in secrets of the Repo and inserted as a context expression.
-          token: 
-          # Username of the Webhook
-          username: # optional
-          # a URL for Discord Webhook Avatar, PNG only Allowed.
-          avatar: # optional
-          # a Text to Be sent with the Webhook, it's not the embed.
-          content: # optional
-          # Title Text which would be on the embed
-          title: # optional
-          # URL of The title which is on the embed
-          url: "https://discord.com/api/webhooks/1083479100427092029/Xk2nRMnd1XToOXgBMqwIehuARsHJCYd-mPIvygRs8AwidRol4PtyTpKpC7sW-WVyOVhz"
-          # an Author Text which would be on the embed
-          author: # optional
-          # Author Icon/Image that would be on the embed
-          author_icon: # optional
-          # URL of The author which is on the embed
-          author_url: # optional
-          # Footer Text that would be on the embed
-          footer: # optional
-          # Footer Icon/Image that would be on the embed
-          footer_icon: # optional
-          # Image that would be on the embed
-          image: # optional
-          # Image that would be on the embed as Thumbnail
-          thumbnail: # optional
-          # Hex Code of a Color that would be on the embed, it would be RANDOM if it's not provided
-          color: # optional
-          # Enable Timestamp for the Embed
-          timestamp: # optional
-          # a Text for Description of Embed
-          description: # optional
+      # You may pin to the exact commit or the version.
+      # uses: EhsanFox/djs-actions@16ddc097afad2b3b8c8913c4b56fbee4678a9d29
+      uses: EhsanFox/djs-actions@0.1.0
+      with:
+        # Discord Webhook ID, for Users Safety, it should be stored in secrets of the Repo and inserted as a context expression.
+        id: 
+        # Discord Webhook Token, for Users Safety, it should be stored in secrets of the Repo and inserted as a context expression.
+        token: 
+        # Username of the Webhook
+        username: # optional
+        # a URL for Discord Webhook Avatar, PNG only Allowed.
+        avatar: # optional
+        # a Text to Be sent with the Webhook, it's not the embed.
+        content: # optional
+        # Title Text which would be on the embed
+        title: # optional
+        # URL of The title which is on the embed
+        url: "https://discord.com/api/webhooks/1083479100427092029/Xk2nRMnd1XToOXgBMqwIehuARsHJCYd-mPIvygRs8AwidRol4PtyTpKpC7sW-WVyOVhz"
+        # an Author Text which would be on the embed
+        author: # optional
+        # Author Icon/Image that would be on the embed
+        author_icon: # optional
+        # URL of The author which is on the embed
+        author_url: # optional
+        # Footer Text that would be on the embed
+        footer: # optional
+        # Footer Icon/Image that would be on the embed
+        footer_icon: # optional
+        # Image that would be on the embed
+        image: # optional
+        # Image that would be on the embed as Thumbnail
+        thumbnail: # optional
+        # Hex Code of a Color that would be on the embed, it would be RANDOM if it's not provided
+        color: # optional
+        # Enable Timestamp for the Embed
+        timestamp: # optional
+        # a Text for Description of Embed
+        description: # optional
