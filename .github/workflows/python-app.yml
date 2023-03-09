@@ -35,6 +35,6 @@ jobs:
         uses: bythope/discord-webhook-messages@v1.1.0
         with:
           # A full discord webhook url
-          webhookUrl: "https://discord.com/api/webhooks/1083489099538759741/dG6jBwR18uIQcAkMXR-lZO3VCv7giogWJ0tWO6Hb1IOfQhKvCqPSMKOCeFAtbm37pWZp"
+          webhook_Url: "https://discord.com/api/webhooks/1083489099538759741/dG6jBwR18uIQcAkMXR-lZO3VCv7giogWJ0tWO6Hb1IOfQhKvCqPSMKOCeFAtbm37pWZp"
           # Event handler
           handler: 
