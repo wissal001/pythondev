@@ -1,14 +1,15 @@
-
-
-name: Python application
+name: Python Application
 
 on: push
 
-     jobs:
-     build:
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+    time-oute: 5
 
-     runs-on: windows-latest
-     timeout-minutes: 5
+    strategy:
+      matrix:
+        os: [windows-latest]
 
     steps:
       - name: Check out Git repository
@@ -25,5 +26,4 @@ on: push
           pylint -m pip install --upgrade pip
       - name: Run tests
         run: |
-          pip install pytest
           python -m pytest
