@@ -4,13 +4,11 @@ name: Python application
 
 on: push
 
-jobs:
-  tests:
-    runs-on: ${{ matrix.os }}
-    
-    strategy:
-      matrix:
-        os: [windows-latest]
+    jobs:
+     build:
+
+     runs-on: windows-latest
+     timeout-minutes: 5
 
     steps:
       - name: Check out Git repository
@@ -24,15 +22,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          
+          pylint -m pip install --upgrade pip
       - name: Run tests
         run: |
           pip install pytest
           python -m pytest
-      - name: Discord Webhook Messages
-        # You may pin to the exact commit or the version.
-        # uses: bythope/discord-webhook-messages@3b3af1ab7923c77fa96ca1d50624a91cfc9d983c
-        uses: bythope/discord-webhook-messages@v1.1.0
-        with:
-          # A full discord webhook url
-          webhook_url: "https://discord.com/api/webhooks/1083497449223622656/FlzN2XsvokaugrnCh_z6zG5dVZEI6Fd5P66iT_axQsx1kjbItFyNEpnBRZcTw9gq8nlk"
