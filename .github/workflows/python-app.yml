@@ -4,13 +4,13 @@ name: Python application
 
 on: push
 
-    jobs:
+jobs:
      build:
 
      runs-on: windows-latest
      timeout-minutes: 5
 
-    steps:
+steps:
       - name: Check out Git repository
         uses: actions/checkout@v1
 
